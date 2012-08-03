@@ -6,8 +6,9 @@ gabc-version: 0.9.3;
 transcriber: Laércio de Sousa;
 transcription-date: 20120803;
 gregoriotex-font: greciliae;
-initial-style: 6;
+initial-style: 1;
 style: editio vaticana;
+mode: 6;
 annotation: VI;
 %%
 (c4)

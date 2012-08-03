@@ -1,1 +1,16 @@
-name: Kyrie VIII;
+name: Kyrie VIII (português);
+gabc-copyright: Laércio de Sousa, 2012, public domain;
+score-copyright: (C) Lincoln H., 2012;
+office-part: Kyrie;
+gabc-version: 0.9.3;
+transcriber: Laércio de Sousa;
+transcription-date: 20120803;
+gregoriotex-font: greciliae;
+initial-style: 1;
+style: editio vaticana;
+mode: 5;
+annotation: V;
+%%
+(c3)SEnhor, Senhor, tende piedade de nós. <i>Bis</i>(::)
+Cristo, Cristo, tende piedade de nós. <i>Bis</i>(::)
+Senhor, Senhor, tende piedade de nós. <i>Bis</i>(::)

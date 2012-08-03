@@ -4,7 +4,7 @@ GL = GloriaVIII
 SA = SanctusVIII
 AD = AgnusDeiVIII
 
-$(MI).pdf: $(MI).tex $(KY).gtex 
+$(MI).pdf: $(MI).tex $(KY).gtex $(GL).gtex 
 	lualatex $<
 
 %.gtex: %.gabc

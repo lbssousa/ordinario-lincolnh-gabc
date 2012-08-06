@@ -1,12 +1,13 @@
-\documentclass[14pt,a4paper]{extarticle}
-\usepackage[left=10mm,right=10mm]{geometry}
-\usepackage{fullpage}
+\documentclass[12pt,a4paper,landscape,twocolumn]{extarticle}
+\usepackage[left=15mm,right=15mm,top=17mm,bottom=17mm]{geometry}
+%\usepackage{fullpage}
 \usepackage{newcent}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{luainputenc}
 \usepackage{gregoriotex}
 \usepackage{xcolor}
 \pagestyle{empty}
+\setlength{\columnsep}{30mm}
 
 \begin{document}
 
@@ -14,34 +15,42 @@
 \setspacebeforeinitial{3.2mm plus 0em minus 0em}
 
 \def\greinitialformat#1{%
-{\color{red}\fontsize{30}{30}\selectfont #1}%
+{%\color{red}%
+\fontsize{35}{35}\selectfont #1}%
 }
 
 %\redlines
 
+\setgrefactor{17}
+
+\gresetfirstlineaboveinitial{\small \textsc{\textbf{VI}}}{\small \textsc{\textbf{VI}}}
+\commentary{{\small \emph{Lincoln H.}}}
+\includescore{AgnusDeiVIII.gtex}
+
+\newpage
 \begin{center}
-    \begin{huge}
-        \textsc{Missa VIII}
-    \end{huge}
+    \begin{small}
+        \textsc{Ordinário inspirado na} \\
+    \end{small}
+    \begin{Huge}
+        \textsc{Missa VIII} \\
+    \end{Huge}
+    \begin{small}
+        \textsc{``De angelis''}
+    \end{small}
 \end{center}
 
-\setgrefactor{20}
-
 \gresetfirstlineaboveinitial{\small \textsc{\textbf{V}}}{\small \textsc{\textbf{V}}}
-\commentary{{\small \emph{\color{red} GR VIII}}}
+\commentary{{\small \emph{Lincoln H. (adapt.: L. Sousa)}}}
 \includescore{KyrieVIII.gtex}
 
 \gresetfirstlineaboveinitial{\small \textsc{\textbf{V}}}{\small \textsc{\textbf{V}}}
-\commentary{{\small \emph{\color{red} GR VIII}}}
+\commentary{{\small \emph{Lincoln H. (adapt.: L. Sousa)}}}
 \includescore{GloriaVIII.gtex}
 
-%\gresetfirstlineaboveinitial{\small \textsc{\textbf{}}}{\small \textsc{\textbf{}}}
-%\commentary{{\small \emph{\color{red} GR ed. Vat. XVIII}}}
-%\includescore{SanctusVIII.gtex}
-
-%\gresetfirstlineaboveinitial{\small \textsc{\textbf{}}}{\small \textsc{\textbf{}}}
-%\commentary{{\small \emph{\color{red} GR ed. Vat. XVIII}}}
-%\includescore{AgnusDeiVIII.gtex}
+\gresetfirstlineaboveinitial{\small \textsc{\textbf{VI}}}{\small \textsc{\textbf{VI}}}
+\commentary{{\small \emph{Lincoln H.}}}
+\includescore{SanctusVIII.gtex}
 
 \end{document}
 

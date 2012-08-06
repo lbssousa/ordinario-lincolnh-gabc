@@ -1,17 +1,21 @@
-MI = MissaVIII
-KY = KyrieVIII
-GL = GloriaVIII
-SA = SanctusVIII
-AD = AgnusDeiVIII
+NU = VIII
+MI = Missa$(NU)
+KY = Kyrie$(NU)
+GL = Gloria$(NU)
+SA = Sanctus$(NU)
+AD = AgnusDei$(NU)
 
-$(MI).pdf: $(MI).tex $(KY).gtex $(GL).gtex 
+../$(MI).pdf: $(MI).pdf
+	mv $< $@
+
+$(MI).pdf: $(MI).tex $(KY).gtex $(GL).gtex $(SA).gtex $(AD).gtex
 	lualatex $<
 
 %.gtex: %.gabc
 	gregorio -v $< -o $@
 
-cleanpdf:
-	rm $(MI).pdf
+cleanpdf: ../$(MI).pdf
+	rm $@
 
 clean:
 	rm *.log *.aux *.gaux *.gtex
